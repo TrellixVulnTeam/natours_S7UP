@@ -5,15 +5,16 @@
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
-  clip-path: polygon(0 0,100% 0,100% 75%,0 100%);
+  clip-path: polygon(0 0,100% 0,100% 75vh,0 100%);
+  -webkit-clip-path: polygon(0 0,100% 0,100% 75vh,0 100%);
   // clip-path: polygon(0% 20%, 60% 20%, 60% 0%, 100% 50%, 60% 100%, 60% 80%, 0% 80%);
 }
 .logo-box{
   position: absolute;
-  top: 40px;
-  left: 40px;
+  top: 4rem;
+  left: 4rem;
   .logo{
-    height: 35px;
+    height: 3.5rem;
   }
 }
 .header-text-box{
@@ -27,12 +28,12 @@
 .heading-primary{
   color: $color-white;
   text-transform: uppercase;
-  margin-bottom: 60px;
+  margin-bottom: 6rem;
   &-main{
     display: block;
-    font-size: 60px;
+    font-size: 6rem;
     font-weight: 400;
-    letter-spacing: 34px;
+    letter-spacing: 3.4rem;
     // animation-name: moveInLeft;
     // animation-duration: 3s;
     // animation-timing-function: ease-in-out;
@@ -41,9 +42,9 @@
   }
   &-sub{
     display: block;
-    font-size: 20px;
+    font-size: 2rem;
     font-weight: 700px;
-    letter-spacing: 17px;
+    letter-spacing: 1.7rem;
     animation: moveInRight 1.5s ease-in-out forwards;
   }
 }

@@ -1,0 +1,53 @@
+.navigation{
+  &-toggle{
+    background-color: $color-white;
+    height: 7rem;
+    width: 7rem;
+    border-radius: 50%;
+    position: fixed;
+    top: 4rem;
+    right: 4rem;
+    z-index: 100;
+    box-shadow: 0 1rem 3rem rgba( $color-dark,.1);
+    cursor: pointer;
+    text-align: center;
+  }
+  &-icon{
+    width: 3rem;
+    height: 0.2rem;
+    background-color: $color-grey-dark;
+    display: inline-block;
+    margin-top: calc(3.5rem - .1rem);
+    position: relative;
+    &::after, &::before{
+      content: '';
+     width: 3rem;
+     height: .2rem;
+     position: absolute;
+     background-color: $color-grey-dark;
+     left: 0;
+    }
+    &::after{
+     top: .8rem;
+    }
+    &::before{
+     top: -.8rem;
+    }
+  }
+  &-background{
+    height: 6rem;
+    width: 6rem;
+    border-radius: 50%;
+    background-image: linear-gradient($color-primary-light, $color-primary-dark);
+    position: fixed;
+    top: 4.5rem;
+    right: 4.5rem;
+    z-index: 10;
+    transition: all 0.8s cubic-bezier(0.77, 0, 0.175, 1);
+  }
+  &.active{
+    .navigation-background{
+      transform: scale(60);
+    }
+  }
+}
